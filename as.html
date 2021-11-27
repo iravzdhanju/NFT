@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+        /* define the floating animation; just a simple position shift */
+        
+        @keyframes cloud_floating {
+            0% {
+                left: -5%;
+            }
+            100% {
+                left: 105%;
+            }
+        }
+        
+        @-ms-keyframes cloud_floating {
+            0% {
+                left: -5%;
+            }
+            100% {
+                left: 105%;
+            }
+        }
+        
+        @-moz-keyframes cloud_floating {
+            0% {
+                left: -5%;
+            }
+            100% {
+                left: 105%;
+            }
+        }
+        
+        @-webkit-keyframes cloud_floating {
+            0% {
+                left: -5%;
+            }
+            100% {
+                left: 105%;
+            }
+        }
+        /* style for banner container */
+        
+        .cloud_floating_container {
+            position: relative;
+            background: #efefef;
+            color: #fff;
+            height: 100px;
+        }
+        /* basic cloud element. put bg img stuff here. for now i've used font-awesome */
+        
+        .cloud {
+            position: absolute;
+            display: block;
+            font-size: 200%;
+            animation: cloud_floating 40s linear infinite;
+            -ms-animation: cloud_floating 40s linear infinite;
+            -moz-animation: cloud_floating 40s linear infinite;
+            -webkit-animation: cloud_floating 40s linear infinite;
+            top: 10px;
+        }
+        /* altering size, alignment and initial position */
+        
+        .cloud2 {
+            font-size: 5em;
+            animation-duration: 60s;
+            animation-delay: -5s;
+            -ms-animation-duration: 60s;
+            -ms-animation-delay: -5s;
+            -moz-animation-duration: 60s;
+            -moz-animation-delay: -5s;
+            -webkit-animation-duration: 60s;
+            -webkit-animation-delay: -5s;
+            top: 10px;
+        }
+        
+        .cloud3 {
+            font-size: 2em;
+            animation-duration: 50s;
+            animation-delay: -20s;
+            -ms-animation-duration: 50s;
+            -ms-animation-delay: -20s;
+            -moz-animation-duration: 50s;
+            -moz-animation-delay: -20s;
+            -webkit-animation-duration: 50s;
+            -webkit-animation-delay: -20s;
+            top: auto;
+            bottom: 10px;
+        }
+        
+        .cloud4 {
+            font-size: 3em;
+            animation-duration: 70s;
+            animation-delay: -40s;
+            -ms-animation-duration: 70s;
+            -ms-animation-delay: -40s;
+            -moz-animation-duration: 70s;
+            -moz-animation-delay: -40s;
+            -webkit-animation-duration: 70s;
+            -webkit-animation-delay: -40s;
+            top: auto;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cloud_floating_container">
+        <i class="icon-cloud cloud"></i>
+        <i class="icon-cloud cloud cloud2"></i>
+        <i class="icon-cloud cloud cloud3"></i>
+        <i class="icon-cloud cloud cloud4"></i>
+    </div>
+
+</body>
+
+</html>
